@@ -6,6 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>BIENVENIDOS AL LUISFER SET</h1>
+  <h1 class="">BIENVENIDOS AL LUISFER SET</h1>
+  <% data.forEach((datos, index) => { %>
+  <h2><%=datos.nombre %></h2>
+  <h2><%=datos.telefono %></h2>
+  <% }) %>
 </body>
 </html>
