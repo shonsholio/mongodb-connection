@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 dotenv.config({ path: './config.env' })
-mongoose.connect(process.env.MONGODB_CONNECT)
+mongoose.connect(process.env.MONGODB_URI)
   .then(connection => {
     console.log('ENCHUFADOS A MONGO_DB')
   })
